@@ -1,71 +1,120 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
-<body>
+<html lang="en">
+  <head>
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#band" class="w3-button w3-bar-item">Band</a>
-  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
+    <!-- Declared Vars To Go Here -->
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="img_band_la.jpg"
-  style="width:100%">
-  <img class="mySlides" src="img_band_ny.jpg"
-  style="width:100%">
-  <img class="mySlides" src="img_band_chicago.jpg"
-  style="width:100%">
-</section>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Band Description -->
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">THE BAND</h2>
-  <p class="w3-opacity"><i>We love music</i></p>
-  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
+    <!-- Metadata -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Band Members -->
-<section class="w3-row-padding w3-center w3-light-grey">
-  <article class="w3-third">
-    <p>John</p>
-    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>John is the smartest.</p>
-  </article>
-  <article class="w3-third">
-    <p>Paul</p>
-    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Paul is the prettiest.</p>
-  </article>
-  <article class="w3-third">
-    <p>Ringo</p>
-    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Ringo is the funniest.</p>
-  </article>
-</section>
+    <link rel="icon" href="mysource_files/favicon.ico">
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+    <!-- Page Name and Site Name -->
+    <title>Page Name - Squiz Matrix HTML Example</title>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mysource_files/style.css" rel="stylesheet">
 
-</body>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="header clearfix" style="background-color: #ffffff">
+
+        <!-- Main Menu -->
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Site Name -->
+        <h1 class="h3 text-muted">Site Name</h1>
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Level 1</a></li>
+          <li class="active">Level 2</li>
+        </ol>
+
+      </header>
+
+      <div class="page-heading">
+
+        <!-- Page Heading -->
+        <h1>Page Heading</h1>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-3">
+
+          <!-- Sub Navigation -->
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">Level 2</a></li>
+            <li class="active"><a href="#">Level 2</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <div class="page-contents">
+
+            <!-- Design Body -->
+            <h2>Sub Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <h4>Sub Heading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+            <h4>Sub Heading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-3">
+
+          <!-- Login Section -->
+          <h2>Login</h2>
+
+          <!-- Search Section -->
+          <h2>Search</h2>
+
+          <!-- Nested Right Column Content -->
+
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <p class="pull-right">
+          <!-- Last Updated Design Area-->
+          Last Updated: Wednesday, January 6, 2016
+        </p>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
 </html>
